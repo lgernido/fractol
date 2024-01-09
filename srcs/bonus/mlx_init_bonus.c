@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 13:53:30 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/08 10:02:55 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:31:50 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	struct_init(t_data *data, int argc, char **argv)
 	}
 }
 
-t_data	ft_init(t_data *data, int argc, char **argv)
+t_data	ft_init(t_data *data)
 {
 	data->mlx = mlx_init();
 	if (!data->mlx)
@@ -57,6 +57,5 @@ t_data	ft_init(t_data *data, int argc, char **argv)
 	data->img.img = mlx_new_image(data->mlx, WIDTH, HEIGHT);
 	data->img.addr = mlx_get_data_addr(data->img.img, &data->img.bits_per_pixel,
 			&data->img.line_length, &data->img.endian);
-	struct_init(data, argc, argv);
 	return (*data);
 }

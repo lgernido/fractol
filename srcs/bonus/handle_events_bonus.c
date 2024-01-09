@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 09:23:13 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/08 10:59:35 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/09 11:21:55 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ int	handle_keypress(int keycode, t_data *data)
 	if (keycode == XK_Escape)
 		close_win(data);
 	else if (keycode == XK_Up)
-		data->draw.y += 0.1;
+		data->draw.y += 0.01;
 	else if (keycode == XK_Down)
-		data->draw.y -= 0.1;
+		data->draw.y -= 0.01;
 	else if (keycode == XK_Left)
-		data->draw.x += 0.1;
+		data->draw.x += 0.01;
 	else if (keycode == XK_Right)
-		data->draw.x -= 0.1;
+		data->draw.x -= 0.01;
 	else if (keycode == XK_c)
 		ft_shift_color(data);
 	else if (keycode == XK_f)

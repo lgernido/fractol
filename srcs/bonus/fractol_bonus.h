@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 13:39:03 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/08 10:35:53 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/09 14:32:10 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int			main(int argc, char **argv);
 
 /*Initialisation*/
 
-t_data		ft_init(t_data *data, int argc, char **argv);
+t_data		ft_init(t_data *data);
 void		my_mlx_pixel_put(t_img *img, int x, int y, int color);
 void		struct_init(t_data *data, int argc, char **argv);
 
@@ -92,11 +92,11 @@ void		compute_burning(t_data *data, double x, double y);
 
 /*Traitement des parametres*/
 
-void		display_help(void);
+void		display_help(t_data *data);
 void		choose_fractal(int argc, char **argv, t_data *data);
 void		set_fractal_type(t_data *data, char *fractal_type, int argc);
 double		ft_atod(char *nptr);
-void		check_params(int argc, char **argv);
+void		check_params(int argc, char **argv, t_data *data);
 
 /*Gestion des couleurs*/
 

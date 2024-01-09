@@ -6,13 +6,13 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 09:12:53 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/07 13:23:44 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/09 15:22:23 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-void	display_help(void)
+void	display_help(t_data *data)
 {
 	ft_printf("Invalid parameters\n\n");
 	ft_printf("Syntax: ./fractol ");
@@ -22,6 +22,7 @@ void	display_help(void)
 	ft_printf("For Julia set, real and imaginary are mandatory\n");
 	ft_printf("Real and imaginary must be between -2 and 2\n\n");
 	ft_printf("Exemple: ./fractol j red -1 0\n");
+	close_win(data);
 	exit(1);
 }
 
@@ -43,7 +44,7 @@ void	set_fractal_type(t_data *data, char *fractal_type, int argc)
 		data->draw.fractal_type = "j";
 	}
 	else
-		display_help();
+		display_help(data);
 }
 
 void	choose_fractal(int argc, char **argv, t_data *data)

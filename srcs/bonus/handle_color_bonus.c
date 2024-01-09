@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:39:40 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/08 10:43:41 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/09 15:14:13 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ uint32_t	find_more_color(int n, t_data *data)
 		blue = 0x80 + (n * 10);
 	}
 	else
-		display_help();
+		display_help(data);
 	return (red << 16 | green << 8 | blue);
 }
 
