@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 09:23:13 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/09 11:21:55 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 09:14:54 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,6 @@ int	handle_keypress(int keycode, t_data *data)
 
 int	handle_mousepress(int button, int x, int y, t_data *data)
 {
-	data->draw.x_mouse = x;
-	data->draw.y_mouse = y;
 	data->draw.x += (x - WIDTH / 2) * data->draw.zoom / WIDTH;
 	data->draw.y += (y - HEIGHT / 2) * data->draw.zoom / HEIGHT;
 	if (button == 4 || button == 5)

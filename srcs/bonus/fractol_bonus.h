@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 13:39:03 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/09 14:32:10 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 09:15:40 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,6 @@ typedef struct s_draw
 	double	b;
 	double	cx;
 	double	cy;
-	double	x_mouse;
-	double	y_mouse;
 }			t_draw;
 
 typedef struct s_data

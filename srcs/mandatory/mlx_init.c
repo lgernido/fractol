@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 13:53:30 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/09 15:16:47 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 09:23:41 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ void	struct_init(t_data *data, int argc, char **argv)
 {
 	data->draw.x = 0;
 	data->draw.y = 0;
-	data->draw.x_mouse = 0;
-	data->draw.y_mouse = 0;
 	data->draw.zoom = 4;
 	data->draw.palette = argv[2];
 	if (argc > 3)
