@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 10:16:26 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/07 13:22:31 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:43:55 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	ft_isspace(int c)
 		return (0);
 }
 
-static double	parse_integer(char *nptr, int *index)
+static double	parse_int(char *nptr, int *index)
 {
 	double	result;
 
@@ -30,6 +30,8 @@ static double	parse_integer(char *nptr, int *index)
 		result = result * 10.0 + (nptr[*index] - '0');
 		(*index)++;
 	}
+	if (ft_isalpha(nptr[*index]))
+		display_help();
 	return (result);
 }
 
@@ -68,7 +70,7 @@ double	ft_atod(char *nptr)
 		sign = -1.0;
 		i++;
 	}
-	nb = parse_integer(nptr, &i);
+	nb = parse_int(nptr, &i);
 	if (nptr[i] == '.')
 		nb += parse_decimal(nptr, &i);
 	return (nb * sign);

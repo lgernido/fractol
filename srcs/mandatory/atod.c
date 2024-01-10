@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 10:16:26 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/09 14:01:58 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:46:31 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ static double	parse_int(char *nptr, int *index)
 		result = result * 10.0 + (nptr[*index] - '0');
 		(*index)++;
 	}
+	if (ft_isalpha(nptr[*index]))
+		display_help();
 	return (result);
 }
 
