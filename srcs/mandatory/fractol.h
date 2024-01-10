@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 14:12:03 by lgernido          #+#    #+#             */
-/*   Updated: 2024/01/10 09:15:00 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/01/10 09:49:20 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,11 +85,12 @@ void		compute_julia(t_data *data, double x, double y);
 
 /*Traitement des parametres*/
 
-void		display_help(t_data *data);
+void		display_help(void);
+void		display_help_free(t_data *data);
 void		choose_fractal(int argc, char **argv, t_data *data);
 void		set_fractal_type(t_data *data, char *fractal_type, int argc);
 double		ft_atod(char *nptr);
-void		check_params(int argc, char **argv, t_data *data);
+void		check_params(int argc, char **argv);
 
 /*Gestion des couleurs*/
 
