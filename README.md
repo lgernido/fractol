@@ -5,7 +5,9 @@ The goal of this project is to create a fractal renderer.
 ### Subject's Requirements
 
   --> We have to the school's graphical library : **Minilibx**
+  
   --> Render the **Mandelbrot** set and the **Julia** set
+  
   --> Handle basic events such as closing the renderer's window, zooming in and out, moving the view etc.. 
 
 ## 🧠 What is a fractal ? 
@@ -75,3 +77,6 @@ Here’s how it works in simple terms:
   **Check for Escape**: You keep applying the formula until the point either escapes to infinity (meaning it gets really, really big) or you decide it’s not going to escape after a certain number of tries.
 
   **Color the Point**: If the point escapes quickly, you can color it one way; if it takes longer to escape, you can use a different color. Points that don’t escape at all can be colored differently, too.
+
+### 📷 Screenshots
+
