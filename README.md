@@ -78,5 +78,60 @@ Here’s how it works in simple terms:
 
   **Color the Point**: If the point escapes quickly, you can color it one way; if it takes longer to escape, you can use a different color. Points that don’t escape at all can be colored differently, too.
 
-### 📷 Screenshots
+## 📁 Installation
 
+The repository contains all the needed libraries to work under **Linux**. Clone the project into your working directory.
+```
+git clone <repository_url>
+```
+
+Use the make or make bonus command and run the programm with the following arguments. 
+```
+./fractol [fractal type] [fractal color] (julia real) (julia imaginary)
+```
+
+For example if you want to render a grey Mandelbrot Set type :
+```
+./fractol m grey
+```
+The fractal types are : 
+  - Mandelbrot (m)
+  - Julia (j)
+  - If make bonus installed, burning ship (b)
+
+**If you decide to render a Julia set, to enter a real and imaginary between -2 and 2.**
+Here is an example for an intresting Julia set :
+```
+./fractol j rainbow 0.285 0.01
+```
+
+The set of colors available are :
+  - red
+  - rainbow
+If make bonus installed you can also choose :
+  - blue
+  - grey
+
+If make bonus is installed, press the key **'C'** to change the color of the fractal, press the key **'F'** to alternate between the Mandelbrot set and the Burning Ship fractal.
+
+## 📷 Screenshots
+
+| <img src = "https://github.com/lgernido/fractol/blob/main/Screenshots/Screenshot%20from%202024-11-19%2013-58-07.png"> |<img src = "https://github.com/lgernido/fractol/blob/main/Screenshots/Screenshot%20from%202024-11-19%2014-03-34.png" >|
+|----------------------------------------------|----------------------------------------------|
+| Mandelbrot Set                               | Julia Set                                    |
+
+| <img src = "https://github.com/lgernido/fractol/blob/main/Screenshots/Screenshot%20from%202024-11-19%2014-04-04.png" >|<img src = "https://github.com/lgernido/fractol/blob/main/Screenshots/Screenshot%20from%202024-11-19%2014-05-39.png" >|
+|----------------------------------------------|----------------------------------------------|
+| Burning Ship                                 | Zoomed in Julia Set                          |
+
+## Additional Ressources
+
+🇫🇷
+
+Arte - Pique Nique sur le plan complexe - (https://www.youtube.com/watch?v=M6o5CRYfNxA)
+
+🇬🇧
+
+Rendering Fractals - (https://www.youtube.com/watch?v=wUlVFYJIUNA)
+
+An Introduction to shader art coding - (https://www.youtube.com/watch?v=M6o5CRYfNxA)
