@@ -4,7 +4,7 @@ The goal of this project is to create a fractal renderer.
 
 ### Subject's Requirements
 
-  --> We have to the school's graphical library : **Minilibx**
+  --> We have to use the school's graphical library : **Minilibx**
   
   --> Render the **Mandelbrot** set and the **Julia** set
   
@@ -44,17 +44,17 @@ For example, the Mandelbrot set formula which we have to render in this project 
 
 The file organisation is pretty self explanatory. 
 
-  **mlx_init.c** --> Initializes all the variable required by minilibx to open a window.
+  **mlx_init.c** --> Initializes all the variable required by minilibx to open a window and display an image.
   
   **handle_params.c** --> Parses the parameters sent to the program and initializes the structure with the name of the fractal to render. 
   
   **handle_events.c** --> Initializes and infinite loop that waits for events to happen a render the fractal as a consequences of those events. Events include clicking on the mouse or on a key.
   
-  **handle_colors.c** --> Depending on the parameters send to the programms, applies different colors sets. 
+  **handle_colors.c** --> Depending on the parameters send to the programms, applies different colors sets to the fractal shape. 
   
-  **mandelbrot.c** --> compute and draws the Mandelbrot set on an image. 
+  **mandelbrot.c** --> Computes and draws the Mandelbrot set on an image. 
   
-  **julia.c** --> compute and drwas the Julia set on an image. 
+  **julia.c** --> Computes and draws the Julia set on an image. 
   
   **atod.c** --> Converts and character into a double.
   
@@ -66,7 +66,7 @@ Most of these files have a _bonus version which adds more sets of colors and the
 
 ## 🖌️ Coloring
 
-In order to dinstinguish the details of the fractal we use an escape-time algorithm. It helps to determine how quickly points in a certain area "escape" to infinity when a specific mathematical operation is applied repeatedly.
+In order to dinstinguish the details of the fractal we use an escape-time algorithm for the coloring. It helps to determine how quickly points in a certain area "escape" to infinity when a specific mathematical operation is applied repeatedly.
 
 Here’s how it works in simple terms:
 
@@ -85,21 +85,30 @@ The repository contains all the needed libraries to work under **Linux**. Clone 
 git clone <repository_url>
 ```
 
-Use the make or make bonus command and run the programm with the following arguments. 
+Use the make or make bonus command.
+
+```
+make
+```
+```
+make bonus
+```
+
+Run the programm with the following arguments. 
 ```
 ./fractol [fractal type] [fractal color] (julia real) (julia imaginary)
 ```
 
-For example if you want to render a grey Mandelbrot Set type :
+For example if you want to render a red Mandelbrot Set type :
 ```
-./fractol m grey
+./fractol m red
 ```
 The fractal types are : 
   - Mandelbrot (m)
   - Julia (j)
-  - If make bonus installed, burning ship (b)
+  - If you ran make bonus, burning ship (b)
 
-**If you decide to render a Julia set, to enter a real and imaginary between -2 and 2.**
+**If you decide to render a Julia set, you need to enter a real and imaginary between -2 and 2.**
 Here is an example for an intresting Julia set :
 ```
 ./fractol j rainbow 0.285 0.01
@@ -108,11 +117,11 @@ Here is an example for an intresting Julia set :
 The set of colors available are :
   - red
   - rainbow
-If make bonus installed you can also choose :
+If you ran make bonus you can also choose :
   - blue
   - grey
 
-If make bonus is installed, press the key **'C'** to change the color of the fractal, press the key **'F'** to alternate between the Mandelbrot set and the Burning Ship fractal.
+If you ran make bonus, press the key **'C'** to change the color of the fractal, press the key **'F'** to alternate between the Mandelbrot set and the Burning Ship fractal.
 
 ## 📷 Screenshots
 
