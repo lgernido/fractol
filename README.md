@@ -4,11 +4,11 @@ The goal of this project is to create a fractal renderer.
 
 ### Subject's Requirements
 
-  --> We have to use the school's graphical library : **Minilibx**
+  → We have to use the school's graphical library : **Minilibx**
   
-  --> Render the **Mandelbrot** set and the **Julia** set
+  → Render the **Mandelbrot** set and the **Julia** set
   
-  --> Handle basic events such as closing the renderer's window, zooming in and out, moving the view etc.. 
+  → Handle basic events such as closing the renderer's window, zooming in and out, moving the view etc.. 
 
 ## 🧠 What is a fractal ? 
 
@@ -44,25 +44,25 @@ For example, the Mandelbrot set formula which we have to render in this project 
 
 The file organisation is pretty self explanatory. 
 
-  **mlx_init.c** --> Initializes all the variable required by minilibx to open a window and display an image.
+  **mlx_init.c** → Initializes all the variable required by minilibx to open a window and display an image.
   
-  **handle_params.c** --> Parses the parameters sent to the program and initializes the structure with the name of the fractal to render. 
+  **handle_params.c** → Parses the parameters sent to the program and initializes the structure with the name of the fractal to render. 
   
-  **handle_events.c** --> Initializes and infinite loop that waits for events to happen a render the fractal as a consequences of those events. Events include clicking on the mouse or on a key.
+  **handle_events.c** → Initializes and infinite loop that waits for events to happen a render the fractal as a consequences of those events. Events include clicking on the mouse or on a key.
   
-  **handle_colors.c** --> Depending on the parameters send to the programms, applies different colors sets to the fractal shape. 
+  **handle_colors.c** → Depending on the parameters send to the programms, applies different colors sets to the fractal shape. 
   
-  **mandelbrot.c** --> Computes and draws the Mandelbrot set on an image. 
+  **mandelbrot.c** → Computes and draws the Mandelbrot set on an image. 
   
-  **julia.c** --> Computes and draws the Julia set on an image. 
+  **julia.c** → Computes and draws the Julia set on an image. 
   
-  **atod.c** --> Converts and character into a double.
+  **atod.c** → Converts and character into a double.
   
   **main.c**
 
 Most of these files have a _bonus version which adds more sets of colors and the possibility to zoom in and out not only in the middle of the window but where the mouse is placed.
 
-  **burningship_bonus.c** --> An additional fractal that is computed and drawn into the window called the burning ship. 
+  **burningship_bonus.c** → An additional fractal that is computed and drawn into the window called the burning ship. 
 
 ## 🖌️ Coloring
 
